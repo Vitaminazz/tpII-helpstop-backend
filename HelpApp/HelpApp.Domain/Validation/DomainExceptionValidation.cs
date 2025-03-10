@@ -1,6 +1,7 @@
 ﻿using System;
 
 
+
 namespace HelpApp.Domain.Validation
 {
     internal class DomainExceptionValidation : Exception
