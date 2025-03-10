@@ -1,15 +1,15 @@
 ﻿using System;
 
+
+
 namespace HelpApp.Domain.Validation
 {
-    public class DomainExceptionValidation : Exception
+    internal class DomainExceptionValidation : Exception
     {
-        public DomainExceptionValidation(string error) : base(error) 
-        { }
-
-        public static void When(bool hasError, string error)
+        public DomainExceptionValidation(string error) : base(error) { }
+        public static void when(bool haserror, string error)
         {
-            if (hasError)
+            if (haserror)
             {
                 throw new DomainExceptionValidation(error);
             }
