@@ -4,7 +4,7 @@ using HelpApp.Application.DTOs;
 
 namespace HelpApp.Application.Interfaces
 {
-    public interface ICategoryService
+    public interface ICategoryInterface
     {
         Task<IEnumerable<CategoryDTO>> GetCategories();
         Task<CategoryDTO> GetById(int? id);
